@@ -1,20 +1,20 @@
 {
+    "control_topic_prefix": "insight-",
     "messager": {
         "_type": "object",
         "_class": "PubsubPublisher",
-        "_module": "xialib_pubsub",
         "pub": {
             "_type": "global",
             "_name": "pubsub"
-        }
+        },
+        "_module": "xialib_pubsub"
     },
-    "control_topic_prefix": "insight-",
     "control_topics": {
+        "backlog": "insight-backlog",
         "cockpit": "insight-cockpit",
-        "cleaner": "insight-cleaner",
         "merger": "insight-merger",
         "packager": "insight-packager",
-        "loader": "insight-loader",
-        "backlog": "insight-backlog"
+        "cleaner": "insight-cleaner",
+        "loader": "insight-loader"
     }
 }
